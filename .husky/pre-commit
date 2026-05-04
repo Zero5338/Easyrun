@@ -1,0 +1,6 @@
+#!/bin/sh
+cd frontend
+npx lint-staged
+cd ..
+cd backend
+./gradlew spotlessCheck
